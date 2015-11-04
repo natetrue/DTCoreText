@@ -3449,7 +3449,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PUBLIC_HEADERS_FOLDER_PATH = DTCoreText;
+				PUBLIC_HEADERS_FOLDER_PATH = include/DTCoreText;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Core/Source\" \"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**";
 			};
 			name = Coverage;
@@ -3674,7 +3674,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PUBLIC_HEADERS_FOLDER_PATH = DTCoreText;
+				PUBLIC_HEADERS_FOLDER_PATH = include/DTCoreText;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Core/Source\" \"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**";
 			};
 			name = Debug;
@@ -3701,7 +3701,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PUBLIC_HEADERS_FOLDER_PATH = DTCoreText;
+				PUBLIC_HEADERS_FOLDER_PATH = include/DTCoreText;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Core/Source\" \"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**";
 			};
 			name = Release;

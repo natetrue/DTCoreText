@@ -2164,6 +2164,7 @@
 				A70F11DB148632CD009202BF /* Frameworks */,
 				A70F11DC148632CD009202BF /* Headers */,
 				508779351BE80ED7000CBF98 /* CopyFiles */,
+				502ECDA51BED4E4800C2CE43 /* Copy headers into correct location */,
 			);
 			buildRules = (
 				A758FC9714DBCEFD007DF8B2 /* PBXBuildRule */,
@@ -2616,6 +2617,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		502ECDA51BED4E4800C2CE43 /* Copy headers into correct location */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy headers into correct location";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ \"$TARGET_BUILD_DIR\" \\!= \"$BUILT_PRODUCTS_DIR\" ]\nthen\n    cp -rvf $TARGET_BUILD_DIR/include $BUILT_PRODUCTS_DIR/\nfi";
+		};
 		A7174BC814F2890900C57464 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3446,6 +3461,7 @@
 					"${TARGET_BUILD_DIR}/**",
 					"$(SYMROOT)/../../**",
 					/usr/include/libxml2,
+					"${TARGET_BUILD_DIR}/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -3670,6 +3686,7 @@
 					"${TARGET_BUILD_DIR}/**",
 					"$(SYMROOT)/../../**",
 					/usr/include/libxml2,
+					"${TARGET_BUILD_DIR}/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -3697,6 +3714,7 @@
 					"${TARGET_BUILD_DIR}/**",
 					"$(SYMROOT)/../../**",
 					/usr/include/libxml2,
+					"${TARGET_BUILD_DIR}/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
